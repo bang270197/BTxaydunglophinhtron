@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Circle=function (radius) {
+        this.radius=radius;
+
+        this.getradius=function () {
+            return radius;
+        }
+       this.getArea=function () {
+           return Math.PI*radius*radius;
+       }
+    };
+    let circle =new Circle(2);
+    let area=circle.getArea();
+    let radius =circle.getradius();
+    alert("Ban kinh hinh tron "+radius+" Dien tich hinh tron"+area);
+
+    let circle1=new Circle(10);
+    area=circle1.getArea();
+    radius=circle1.getradius();
+    alert("Ban kinh hinh tron "+radius+" Dien tich hinh tron"+area);
+</script>
+</body>
+</html>
